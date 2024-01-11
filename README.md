@@ -27,7 +27,9 @@ Convo is a simple web application powered by Google's Gemini model. It allows us
    pip install -r requirements.txt
    ```
 
-3. **Run the Application:**
+3. **Generate YOUR Gemini API key from this [Link](https://ai.google.dev/?utm_source=google&utm_medium=cpc&utm_campaign=brand_core_brand&gad_source=1&gclid=Cj0KCQiAwP6sBhDAARIsAPfK_wYg12Rux8pCa98sXFSVKcsr6KECGDEdH6GZeUwQErSspvlKZajNVzsaAtStEALw_wcB)**
+
+4. **Run the Application:**
    ```bash
    python app.py
    ```
