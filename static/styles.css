@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/static/background.jpg') fixed;
+    background-size: cover;
+}
+
+#chat-container {
+    max-width: 544px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#chat-header {
+    color: mintcream;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 2px solid #2980b9;
+}
+
+#message-container {
+    flex-grow: 1;
+    max-height: 480px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+    background-color: #F5F5DC;
+}
+
+.user-message, .other-message {
+    color: #333;
+}
+
+.user-message {
+    align-self: flex-end;
+}
+
+.other-message {
+    align-self: flex-start;
+}
+
+.message-content {
+    padding: 10px;
+}
+
+#message-input {
+    width: calc(98% - 20px);
+    padding: 4px;
+    margin: 10px;
+    border: 1px solid #ff8c00;
+    border-radius: 4px;
+    resize: none;
+}
+
+#message-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+#message-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#message-container::-webkit-scrollbar-thumb {
+    background-color: #ff8c00;
+    border-radius: 10px;
+}
+
+#message-container::-webkit-scrollbar-thumb:hover {
+    background-color: #e07a00;
+}
+
+#send-button, #new-chat-button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.message-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#status-indicator {
+    text-align: center;
+    color: #ff8c00;
+    font-weight: bold;
+    display: none;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

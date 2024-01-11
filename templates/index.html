@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div id="chat-container">
+        <!-- Chat container -->
+        <div id="chat-content">
+            <div id="chat-header">Convo (Powered by Google's Gemini)</div>
+            <div id="message-container">
+                <!-- Existing messages go here -->
+            </div>
+            <div id="status-indicator"></div>
+            <textarea id="message-input" placeholder="Ask Gemini..."></textarea>
+            <button id="send-button">Send 🡡</button>
+            <!-- Add a new chat button -->
+            <button id="new-chat-button">New Chat 🔄</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
